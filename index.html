@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banky | Manage your Money!!</title>
+    <link rel="icon" href="images/Banky_logo.PNG" type="image/gif" ; />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:670px)"
+      href="css/mobile.css"
+    />
+
+    <script defer src="js/script.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navlist">
+      <li class="nav-element heading">
+        <h3 id="welcome">Log in to get started</h3>
+      </li>
+      <li class="nav-element logo">
+        <img src="images/Banky_logo.PNG" alt="logo" />
+      </li>
+      <form class="nav-element credentials" autocomplete="off">
+        <input type="text" id="user" placeholder="user" />
+        <input type="text" id="password" placeholder="PIN" maxlength="4" />
+        <button type="submit" id="login">&#8594;</button>
+      </form>
+    </nav>
+    <main class="app">
+      <!-- Balance -->
+      <div class="balance">
+        <div class="balance-heading">
+          <p id="balance__label">Current Balance</p>
+          <p id="date">As of 05/03/2037</p>
+        </div>
+        <div id="balance__value">
+          <span>&#8377; 0000</span>
+        </div>
+      </div>
+
+      <!-- Movements -->
+      <div class="movements">
+        <div class="movement__row">
+          <div class="movement__date">
+            <div class="movements__type movements__type--deposit">
+              8 deposit
+            </div>
+            <div class="movements__date">12/03/2020</div>
+          </div>
+          <div class="movements__value">&#8377; 1300.00&nbsp;</div>
+        </div>
+
+        <div class="movement__row">
+          <div class="movement__date">
+            <div class="movements__type movements__type--deposit">
+              8 deposit
+            </div>
+            <div class="movements__date">12/03/2020</div>
+          </div>
+          <div class="movements__value">&#8377; 1300.00&nbsp;</div>
+        </div>
+        <div class="movement__row">
+          <div class="movement__date">
+            <div class="movements__type movements__type--deposit">
+              8 deposit
+            </div>
+            <div class="movements__date">12/03/2020</div>
+          </div>
+          <div class="movements__value">&#8377; 1300.00&nbsp;</div>
+        </div>
+        <div class="movement__row">
+          <div class="movement__date">
+            <div class="movements__type movements__type--deposit">
+              8 deposit
+            </div>
+            <div class="movements__date">12/03/2020</div>
+          </div>
+          <div class="movements__value">&#8377; 1300.00&nbsp;</div>
+        </div>
+        <div class="movement__row">
+          <div class="movement__date">
+            <div class="movements__type movements__type--deposit">
+              8 deposit
+            </div>
+            <div class="movements__date">12/03/2020</div>
+          </div>
+          <div class="movements__value">&#8377; 1300.00&nbsp;</div>
+        </div>
+        <div class="movement__row">
+          <div class="movement__date">
+            <div class="movements__type movements__type--deposit">
+              8 deposit
+            </div>
+            <div class="movements__date">12/03/2020</div>
+          </div>
+          <div class="movements__value">&#8377; 1300.00&nbsp;</div>
+        </div>
+        <div class="movement__row">
+          <div class="movement__date">
+            <div class="movements__type movements__type--deposit">
+              8 deposit
+            </div>
+            <div class="movements__date">12/03/2020</div>
+          </div>
+          <div class="movements__value">&#8377; 1300.00&nbsp;</div>
+        </div>
+        <div class="movement__row">
+          <div class="movement__date">
+            <div class="movements__type movements__type--deposit">
+              8 deposit
+            </div>
+            <div class="movements__date">12/03/2020</div>
+          </div>
+          <div class="movements__value">&#8377; 1300.00&nbsp;</div>
+        </div>
+        <div class="movement__row">
+          <div class="movement__date">
+            <div class="movements__type movements__type--deposit">
+              8 deposit
+            </div>
+            <div class="movements__date">12/03/2020</div>
+          </div>
+          <div class="movements__value">&#8377; 1300.00&nbsp;</div>
+        </div>
+        <div class="movement__row">
+          <div class="movement__date">
+            <div class="movements__type movements__type--deposit">
+              8 deposit
+            </div>
+            <div class="movements__date">12/03/2020</div>
+          </div>
+          <div class="movements__value">&#8377; 1300.00&nbsp;</div>
+        </div>
+      </div>
+
+      <!-- Transfer Money -->
+      <div class="tranfer-money">
+        <h2>Transfer Money</h2>
+        <form class="transfer__form">
+          <input type="text" class="transferTo_value" />
+          <input type="text" class="transferAmount" />
+          <button class="transfer">&#8594;</button>
+          <label class="trans_label transfer__label">Transfer to</label>
+          <label class="trans_label transfer__amount">Amount</label>
+        </form>
+      </div>
+
+      <!-- Request Loan -->
+      <div class="request-loan">
+        <h2>Request Loan</h2>
+        <form class="form loan__form">
+          <input type="text" class="loan_input" />
+          <button class="btn__loan">&#8594;</button>
+          <label>Amount</label>
+        </form>
+      </div>
+
+      <!-- Close Account -->
+      <div class="close-account">
+        <h2>Close account</h2>
+        <form class="closeaccount__form">
+          <input type="text" class="user_value" />
+          <input type="password" maxlength="6" class="user_pin" />
+          <button class="transfer">&#8594;</button>
+          <label class="trans_label transfer__label">Confirm user</label>
+          <label class="trans_label transfer__amount">Confirm PIN</label>
+        </form>
+      </div>
+
+      <!-- Summary of Transactions -->
+      <div class="summary">
+        <p class="summary__label">IN</p>
+        <p class="summary__value summary__value--in">&#8377; 0000</p>
+        <p class="summary__label">OUT</p>
+        <p class="summary__value summary__value--out">&#8377; 0000</p>
+        <p class="summary__label">INTEREST</p>
+        <p class="summary__value summary__value--interest">&#8377; 0000</p>
+        <button class="btn-sort">↓ SORT</button>
+      </div>
+
+      <!-- SESSION END TIMER -->
+      <p class="timer">
+        You will be logged out in <span class="time">02:52</span>
+      </p>
+    </main>
+  </body>
+</html>

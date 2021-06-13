@@ -1,0 +1,330 @@
+/* FONT TYPE */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #f4f4f4;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+/* CONSOLE */
+.console__label {
+  margin-top: 2rem;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+/* Heading */
+.navlist {
+  padding: 0.6rem;
+  margin: 0rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlist li {
+  list-style: none;
+}
+
+.navlist h3 {
+  font-size: 1.5rem;
+}
+
+/* Logo */
+.navlist img {
+  border-radius: 50%;
+  height: 80px;
+  filter: invert(5%);
+  z-index: 2;
+}
+
+/* Credentials */
+.navlist form input {
+  border: none;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  width: 4.2rem;
+  margin: 0.2rem;
+  outline: none;
+  font-size: inherit;
+  text-align: center;
+}
+
+.navlist form button {
+  background: inherit;
+  text-align: center;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Main-Section */
+
+.app {
+  position: relative;
+  max-width: 100rem;
+  margin: 1rem 10rem;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: auto repeat(3, 10rem) auto;
+  gap: 2rem;
+  opacity: 0;
+  transition: all 1s;
+  box-sizing: inherit;
+}
+
+.balance {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 0.3rem;
+  margin: 0rem 1.2rem;
+}
+
+.balance-heading #date {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+#balance__value {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Movements */
+.movements {
+  width: 35rem;
+  grid-row: 2 / 5;
+  padding: 0.5 rem;
+  border-radius: 1rem;
+  overflow-y: auto;
+}
+
+.movement__row {
+  /* margin: 1rem; */
+  border-bottom: 1px solid #eee;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.movement__date {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.movements__date {
+  font-size: 0.7rem;
+  align-self: center;
+  font-weight: bold;
+}
+
+.movements__type {
+  background: linear-gradient(to left top, green, rgb(83, 226, 83));
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  padding: 0.4rem;
+  border-radius: 1rem;
+}
+
+/* DEPOSIT */
+.movements__type--deposit {
+  background: linear-gradient(to left top, green, rgb(83, 226, 83));
+}
+
+.movements__type--withdrawal {
+  background: linear-gradient(
+    to left top,
+    rgb(214, 25, 56),
+    rgb(216, 108, 126)
+  );
+}
+
+/* TRANSFORM */
+.tranfer-money {
+  background: linear-gradient(to left top, rgb(211, 154, 49), yellow);
+  border-radius: 1rem;
+  width: 90%;
+  padding: 0.8rem;
+}
+
+.transfer__form {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 2.5fr;
+  grid-template-rows: auto auto;
+  grid-gap: 0.4rem 2rem;
+  text-align: center;
+}
+
+.transfer__form > label {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.transfer__form input {
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  width: 90%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.transfer__form button {
+  outline: none;
+  border: none;
+  padding: 0.6rem;
+  width: 3rem;
+  border-radius: 0.3rem;
+}
+
+/* REQUEST */
+.request-loan {
+  background: linear-gradient(to left top, rgb(11, 184, 11), rgb(83, 226, 83));
+  border-radius: 1rem;
+  width: 90%;
+  padding: 0.8rem;
+}
+
+.loan__form {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr 2.5fr;
+  grid-template-rows: auto auto;
+  grid-column-gap: 2rem;
+  grid-row-gap: 0.3rem;
+  text-align: center;
+}
+
+.loan__form > input {
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  width: 90%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.loan__form > label {
+  grid-row: 2;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.loan__form > button {
+  outline: none;
+  border: none;
+  width: 3rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+/* CLOSE ACCOUNT */
+
+.close-account {
+  background: linear-gradient(
+    to left top,
+    rgb(214, 25, 56),
+    rgb(216, 108, 126)
+  );
+  border-radius: 1rem;
+  width: 90%;
+  padding: 0.8rem;
+}
+
+.closeaccount__form {
+  display: grid;
+  grid-template-columns: 3fr 3fr 2.5fr;
+  grid-template-rows: auto auto;
+  grid-gap: 0.4rem 2rem;
+}
+
+.closeaccount__form > input {
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  width: 90%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.closeaccount__form > button {
+  outline: none;
+  border: none;
+  width: 3rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.closeaccount__form > label {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* SUMMARY */
+.summary {
+  display: flex;
+  align-items: baseline;
+  padding: 0 0.3rem;
+  margin-top: 0rem;
+}
+
+.summary__value {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  padding: 0 0.4rem;
+}
+
+.summary__value--in {
+  color: rgb(57, 150, 57);
+}
+
+.summary__value--out {
+  color: rgb(233, 38, 71);
+}
+
+.summary__value--interest {
+  color: rgb(57, 150, 57);
+}
+
+.btn-sort {
+  outline: none;
+  border: none;
+  background: inherit;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-align: center;
+  padding: 1rem;
+}
+
+.btn-sort:hover {
+  opacity: 0.8;
+}
+
+/* TIMER */
+.timer {
+  grid-column: 2/3;
+  text-align: end;
+  padding-right: 1rem;
+  margin-top: 2rem;
+}
+
+.time {
+  font-weight: bold;
+}

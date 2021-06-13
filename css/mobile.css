@@ -1,0 +1,59 @@
+/* MOBILE VIEW */
+
+/* HEADING */
+.navlist {
+  padding: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navlist form {
+  display: flex;
+  margin: 0rem 1rem;
+  transform: translateX(1rem);
+}
+
+.navlist img {
+  display: none;
+}
+
+/* MAIN APP */
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+/* TRANSACTIONS */
+.movements {
+  max-width: 25rem;
+}
+.balance {
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+/* BALANCE DATE */
+#date {
+  display: none;
+}
+
+/* SUMMARY */
+.summary {
+  display: none;
+}
+
+/* TIMER */
+.timer {
+  text-align: start;
+}
+
+/* SIZE>620PX */
+@media screen and (max-width: 618px) {
+  .app {
+    display: none;
+    transition: display 0.3s;
+  }
+}
